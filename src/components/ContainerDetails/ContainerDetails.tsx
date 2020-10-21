@@ -1,6 +1,7 @@
 import React, { ReactNode, useState } from "react";
 import { useSelector } from "react-redux";
 import { ContainerStatus } from "../../data/enum";
+import { PotentialRoute } from "../PotentialRoute/PotentialRoute";
 
 import './ContainerDetails.scss'
 
@@ -8,7 +9,7 @@ export function ContainerDetails() {
     const bundle = useSelector((state: ContainerBundleState) => state.containerBundle)
     
    
-    console.log(potentialRoutes)
+    // console.log(potentialRoutes)
     
 
     if (!bundle)
@@ -21,28 +22,12 @@ export function ContainerDetails() {
             </div>
 
             <div className='potential-route-container'>
-            <h1>1</h1>
-            <potentialRoutes/>
-                
+                {
+                    bundle.potentialRoutes.map((route,index)=> (
+                        <PotentialRoute route={route}/>
+                    ))
+                }
             </div>
         </div>
-    )
-}
-
-function potentialRoutes() {
-    const bundle = useSelector((state: ContainerBundleState) => state.containerBundle)
-    const resDes = ""
-    return (
-        {bundle?.potentialRoutes.forEach((route,index) => {
-            return(
-                <div key={index} className="potential-route-wrapper">
-                    <div className="potential-route">
-                        {route.name}
-                    </div>
-                </div>
-            )
-            
-        })}
-        
     )
 }
