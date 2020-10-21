@@ -2,9 +2,16 @@
 interface IContainerBundle{
     id: number
     name: string
-    priority: ContainerStatus
+    cause: string
+    priority: number 
     potentialRoutes: IRouteProposition[]
 }
+
+// enum ContainerStatus{
+//     Low,
+//     Medium,
+//     High
+// }
 
 interface IRouteProposition{
     name: string
@@ -14,6 +21,8 @@ interface IRouteProposition{
 }
 
 interface IRoutePort{
+    country: string
+    city: string
     name: string
     status: RoutePortStatus
 }
