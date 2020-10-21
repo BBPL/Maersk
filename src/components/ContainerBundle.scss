@@ -1,0 +1,15 @@
+$color: #282c34;
+
+.bundle-wrapper{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-between;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    padding:5px;
+
+    &:hover{
+        background-color: darken($color, 2%);
+    }
+}
