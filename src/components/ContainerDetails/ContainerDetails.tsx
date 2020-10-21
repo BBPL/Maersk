@@ -1,21 +1,33 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { useSelector } from "react-redux";
 import { ContainerStatus } from "../../data/enum";
+import { PotentialRoute } from "../PotentialRoute/PotentialRoute";
 
 import './ContainerDetails.scss'
 
 export function ContainerDetails() {
-    const bundle = useSelector((state:ContainerBundleState) => state.containerBundle)
+    const bundle = useSelector((state: ContainerBundleState) => state.containerBundle)
+    
+   
+    // console.log(potentialRoutes)
+    
+
     if (!bundle)
-        return (<div className="container-details"/>)
-    return(
+        return (<div className="container-details" />)
+    return (
         <div className="container-details">
-            <div className='route-details'></div>
-            <div className='potential-route-container'>
-                
+            <div className='route-details'>
+                <h1>{bundle.name}</h1>
+                <h2>Priority: {ContainerStatus[bundle.priority]} </h2>
             </div>
-            <h1>{bundle.name}</h1>
-            <p>{ContainerStatus[bundle.priority]}</p>
+
+            <div className='potential-route-container'>
+                {
+                    bundle.potentialRoutes.map((route,index)=> (
+                        <PotentialRoute route={route}/>
+                    ))
+                }
+            </div>
         </div>
     )
 }

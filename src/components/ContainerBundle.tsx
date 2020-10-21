@@ -18,7 +18,14 @@ export const ContainerBundle: React.FC<ContainerBundleProp> = ({name,status,upda
         id:10,
         name: name,
         priority: status,
-        potentialRoutes: []
+        potentialRoutes: [
+            {
+                name: "test123",
+                ports:[],
+                bunkerPricing: 100,
+                costSaving: 100
+            }
+        ]
     }
 
     const openNewWin = React.useCallback(
