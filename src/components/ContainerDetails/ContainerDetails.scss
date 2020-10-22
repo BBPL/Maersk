@@ -1,11 +1,12 @@
 .container-details{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: 	#101010;
     width: 100%; 
     
     .route-details{
         padding: 50px;
+        padding-top: 30px;
         height: 25%;
     }
 
@@ -13,25 +14,63 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 70%;
-        // padding: 35px;
-        // align-items: stretch;
-        
+        height: 100%;
         justify-content: center;
+        padding: 30px;
 
         .potential-route-wrapper{
             flex-grow: 1;
-            // width: 50%;
-            // width: 100%;
-            // margin: 30px;
-            padding: 50px;
+            padding: 15px;
+            height: 100%;
             .potential-route{
                 height: 100%;
-                border-radius: 5%;
-                border: 1px solid black;
+                border-radius: 15px;
                 padding: 25px;
+                width: 100%;
+                height: 100%;
                 text-align: center;
-                background-color: black;
+                background-color: lighten(#808080, 5%);
+                box-shadow: 0px 0px 20px 0px #808080;
+                transition: 15ms ease-in;
+                overflow: hidden;
+                &:hover{
+                    box-shadow: 0px 0px 25px 0px darken(#808080, 15%);  
+                }
+
+                .potential-route-details{
+                    padding-top: 30px;
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    // width: 50%;
+                    // height:20%;
+                    display: grid;
+                    grid-template-columns: 0.5fr 0.5fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    gap: 0px 0px;
+                    grid-template-areas:
+                      "item-ltc item-rtc"
+                      "item-midl item-midr"
+                      "item-blc item-brc";
+                    .item{
+                        padding:5px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .description{
+                            font-size: medium;
+                        }
+                        .value{
+
+                        }
+                    }
+                    .item-ltc { grid-area: item-ltc; border-bottom: #101010 1px solid; border-right: #101010 1px solid; }
+                    .item-rtc { grid-area: item-rtc; border-bottom: #101010 1px solid;}
+                    .item-midl { grid-area: item-midl;  border-bottom: #101010 1px solid; border-right: #101010 1px solid; }
+                    .item-midr { grid-area: item-midr; border-bottom: #101010 1px solid;}
+                    .item-blc { grid-area: item-blc;  border-bottom: #101010 1px solid; border-right: #101010 1px solid; }
+                    .item-brc { grid-area: item-brc; border-bottom: #101010 1px solid;}
+                }
             }
         }
     }
