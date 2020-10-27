@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,bold,italic&subset=latin,latin-ext');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+  background-color: #F4F5F7;
+  /* background-color: #c8c8c8; */
+  /* background-color: #282c34; */
+}
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.body-content-wrapper{
+  width: 100%;
+}
+
+.body-content{
+  padding: 0px 25px 0px 25px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.box-description{
+  display: flex;
+  width:100%;
+  padding:0px 20px 0px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  .box-title{
+    align-self: flex-start;
+    color: #353E6C;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .box-date{
+    align-self: flex-end;
+    color:#BACCFD;
+    img{
+      padding-left: 5px;
+    }
+  }
+}
+
+// .blue-bg{
+//   background: linear-gradient(101.84deg, #5C24FC 2.78%, #9D7AFF 98.95%);
+// }
+
+// .med-box{
+//   width: 400px;
+//   height: 400px;
+// }

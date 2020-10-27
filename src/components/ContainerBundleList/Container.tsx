@@ -26,9 +26,9 @@ export const Container = () => {
                 <p className="split">|</p>
                 <p className="bundlePriority">Priority</p>
             </div>
-            {containerBundles.map((cb, index) => (
-                <ContainerBundle containerBundle={cb} updateContainer={updateContainer} />
-            ))}
+            {/* {containerBundles.map((cb, index) => (
+                // <ContainerBundle containerBundle={cb} updateContainer={updateContainer} />
+            ))} */}
         </div>
     )
 }
