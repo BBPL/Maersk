@@ -2,33 +2,80 @@ $color: #282c34;
 $lighter: lighten($color,5%);
 $darker: darken($color,30%);
 
-.containerListWrapper{
-    height: 100vh;
-    width: 30vw;
-    background-color:darken(#c8c8c8,2%);
-    border-right: 1px solid darken(#c8c8c8,8%);
-    display: flex;
-    color:	#101010;
-    flex-direction: column;
-    .containerHeader{
-        display:flex;
-        width:auto;
-        flex-direction: row;
-        text-align: center;
-        padding: 5px;
-        font-size: large;
-        // height: 80px;
-        border-bottom: 1px black solid;
-        align-items: center;
-        // border-bottom: 4px darken(#282c34, 10);
-        .bundleName, .bundlePriority{
-            flex-grow: 1;
-        }
-        .split{
-            flex-grow: 1;
-            color:black;
-        }
 
+.table-wrapper{
+    width: auto;
+    
+    .container-table{
+        border-spacing: 15px;
+    }
+    .table-heading th{
+        text-align: center;
+        color: #353E6C;
     }
 }
+th, td{
+    padding: 0px 10px 0px 10px;
+}
+
+.table-containers{
+    width: 100%;
+}
+tr{
+    td{
+        border-radius: 5px;
+        // line-height: 1px;
+    }
+    .bundle-name{
+        background-color: #BACCFD;
+    }
+    .bundle-status{
+        background-color: #C1E4B4;
+    }
+    .bundle-arrival,.bundle-price{
+        background-color: #EDF2FF;
+    }
+    .suggestion{
+        background-color: #FFF5D9;
+        color: #FFBB38;
+    }
+    // padding: 5px;
+}
+p{
+    padding: 4px;
+}
+.divider,.suggestion{
+    padding:0;
+}
+
+// .containerListWrapper{
+//     height: 100vh;
+//     width: 30vw;
+//     background-color:darken(#c8c8c8,2%);
+//     border-right: 1px solid darken(#c8c8c8,8%);
+//     display: flex;
+//     color:	#101010;
+//     flex-direction: column;
+//     .containerHeader{
+//         display:flex;
+//         width:auto;
+//         flex-direction: row;
+//         text-align: center;
+//         padding: 5px;
+//         font-size: large;
+//         // height: 80px;
+//         border-bottom: 1px black solid;
+//         align-items: center;
+//         // border-bottom: 4px darken(#282c34, 10);
+//         .bundleName, .bundlePriority{
+//             flex-grow: 1;
+//         }
+//         .split{
+//             flex-grow: 1;
+//             color:black;
+//         }
+
+//     }
+// }
+
 

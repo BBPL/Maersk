@@ -1,4 +1,13 @@
 .container-wrapper{
-    background-color: #ffffff;
-    border-radius: 30px;
+    overflow: hidden;
+    padding:10px;
+    .content-container{
+        border-radius: 30px;
+        height: fit-content;
+        width: fit-content;
+        background-color: #ffffff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
 }
