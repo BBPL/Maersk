@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './img/maersklogo.svg'
 import './App.css';
 // import data from './data/temp.json'
 // import linedata from './data/line.json'
@@ -9,12 +10,16 @@ import './App.css';
 // import { ContainerStatus } from './data/ContainerStatus';
 import { Container } from './components/ContainerBundleList/Container';
 import { ContainerDetails } from './components/ContainerDetails/ContainerDetails';
+import NavigationBar from './components/Navigation/NavigationBar';
+import TopNavigation from './components/Navigation/TopNavigation/TopNavigation';
 
 function App() {
   return (
     <div className="App">
-      <Container/>
-      <ContainerDetails/>
+      <NavigationBar logo={logo} />
+      <TopNavigation />
+      {/* <Container/>
+      <ContainerDetails/> */}
     </div>
   );
 }

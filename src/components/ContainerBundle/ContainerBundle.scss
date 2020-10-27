@@ -8,8 +8,12 @@ $color: #282c34;
     // padding-top: 5px;
     // padding-bottom: 5px;
     padding:5px;
+    transition: 0.07s ease-in;
+    border-bottom: 1px solid darken(#c8c8c8,8%);
 
     &:hover{
-        background-color: darken($color, 2%);
+        // animation-duration: 0.3ms;
+        background-color: darken(#c8c8c8,7%);
+        color: 	lighten(#101010,15%)
     }
 }
