@@ -1,0 +1,16 @@
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.csprojAssemblyReference.cache
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.AssemblyInfoInputs.cache
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.AssemblyInfo.cs
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.csproj.CoreCompileInputs.cache
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.exe
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.deps.json
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.runtimeconfig.json
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.runtimeconfig.dev.json
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.dll
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\scripts.pdb
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.dll
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.pdb
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.genruntimeconfig.cache
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\Bogus.dll
+C:\Users\mrkis\projects\maersk\scripts\bin\Debug\netcoreapp3.1\FizzWare.NBuilder.dll
+C:\Users\mrkis\projects\maersk\scripts\obj\Debug\netcoreapp3.1\scripts.csproj.CopyComplete
