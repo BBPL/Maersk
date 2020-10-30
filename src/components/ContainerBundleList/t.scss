@@ -7,7 +7,7 @@ $darker: darken($color,30%);
     width: auto;
     
     .container-table{
-        border-spacing: 15px;
+        border-spacing: 10px;
     }
     .table-heading th{
         text-align: center;
@@ -15,7 +15,11 @@ $darker: darken($color,30%);
     }
 }
 th, td{
-    padding: 0px 10px 0px 10px;
+    padding: 4px 20px 4px 20px;
+}
+
+tbody{
+    overflow-y: auto;
 }
 
 .table-containers{
@@ -23,8 +27,10 @@ th, td{
 }
 tr{
     td{
-        border-radius: 5px;
-        // line-height: 1px;
+        border-radius: 15px;
+        line-height:normal;
+        font-size: medium;
+        // display: inline-block;
     }
     .bundle-name{
         background-color: #BACCFD;
@@ -44,8 +50,11 @@ tr{
 p{
     padding: 4px;
 }
-.divider,.suggestion{
+.divider{
     padding:0;
+    img{
+        height: 15px;
+    }
 }
 
 // .containerListWrapper{

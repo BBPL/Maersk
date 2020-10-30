@@ -22,7 +22,7 @@ export class ContainerBundle extends React.Component<ContainerBundleProp, Contai
                 <td className="bundle-price">{potentialRoutes[0].costSaving}</td>
                 <td className="divider"><img src={divider} alt="Divider"/></td>
                 <td className="suggestion">
-                    <div className="suggested-actions-btn"><p> Suggested Actions</p></div>
+                    <div className="suggested-actions-btn">Suggested Actions</div>
                 </td>
             </tr>
         )

@@ -18,6 +18,7 @@ import ContentContainer from './components/ContentContainer/ContentContainer';
 import { ContainerBundle } from './components/ContainerBundle/ContainerBundle';
 import ContainerBundleList from './components/ContainerBundleList/ContainerBundle';
 import Card from './components/Card/Card';
+import SmallCard from './components/Card/SmallCard';
 
 function App() {
   return (
@@ -39,6 +40,16 @@ function App() {
             <ContainerBundleList/>
           </ContentContainer>
           <Card />
+          <SmallCard/>
+          {/* <SmallCard/>
+          <SmallCard/>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <SmallCard/> */}
+          {/* <Card />
           <Card />
           <Card />
           <Card />
@@ -49,8 +60,7 @@ function App() {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
           {/* <ContentContainer>
             <Card />
           </ContentContainer> */}
