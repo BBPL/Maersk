@@ -8,13 +8,16 @@ export default class ContainerBundleList extends React.Component<{},{}>{
         return(
             <div className="table-wrapper">
                 <table className="container-table">
+                    <thead>
+
                     <tr className="table-heading">
                         <th><p>Container bundle</p> </th>
                         <th>Priority</th>
                         <th>Arrival</th>
                         <th>Diff</th>
                     </tr>
-                    {/* <div className="table-containers"> */}
+                    </thead>
+                    <tbody>
                         <ContainerBundle containerBundle={containerBundle1}/>
                         <ContainerBundle containerBundle={containerBundle2}/>
                         <ContainerBundle containerBundle={containerBundle3}/>
@@ -22,7 +25,7 @@ export default class ContainerBundleList extends React.Component<{},{}>{
                         <ContainerBundle containerBundle={containerBundle2}/>
                         <ContainerBundle containerBundle={containerBundle3}/>
                         <ContainerBundle containerBundle={containerBundle1}/>
-                    {/* </div> */}
+                    </tbody>
                 </table>
             </div>
         )
