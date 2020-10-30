@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: Poppins;
+
 }
 
 body{
@@ -17,10 +19,32 @@ body{
   flex-direction: row;
 }
 
+
+.small-devices{
+  display: none;
+}
 .body-content-wrapper{
   width: 100%;
 }
 
+@media screen and (max-width: 950px){
+  // background-color: yellow;
+  // display: none;
+  .nav-wrapper{
+    display: none;
+  }
+  .body-content-wrapper{
+    display: none;
+  }
+  .small-devices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+  }
+}
 .body-content{
   padding: 0px 25px 0px 25px;
   display: flex;
@@ -55,6 +79,10 @@ body{
   }
 }
 
+
+.full-width{
+  width: 100%;
+}
 // .blue-bg{
 //   background: linear-gradient(101.84deg, #5C24FC 2.78%, #9D7AFF 98.95%);
 // }
