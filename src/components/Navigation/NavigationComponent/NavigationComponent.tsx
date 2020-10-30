@@ -1,4 +1,5 @@
 import React from "react";
+import './../../../App.scss'
 
 type NavigationComponentProp = {
     name?: string,
@@ -11,7 +12,7 @@ export default class NavigationComponent extends React.Component<NavigationCompo
         const { name, link, icon } = this.props;
         if (name && link) {
             return (
-                <div className="nav-component-wrapper">
+                <div className="nav-component-wrapper full-width">
                     <div className="nav-component-icon">
                         <img src={this.props.icon} alt={this.props.name} />
                     </div>

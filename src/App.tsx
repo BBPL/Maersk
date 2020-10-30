@@ -41,33 +41,11 @@ function App() {
           </ContentContainer>
           <Card />
           <SmallCard/>
-          {/* <SmallCard/>
-          <SmallCard/>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <SmallCard/> */}
-          {/* <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card /> */}
-          {/* <ContentContainer>
-            <Card />
-          </ContentContainer> */}
         </div>
       </div>
-      
-      
+      <div className="small-devices">
+        Find a proper monitor :)
+      </div>
     </div>
   );
 }
