@@ -40,6 +40,10 @@ function App() {
             <ContainerBundleList/>
           </ContentContainer>
           <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
           <SmallCard/>
         </div>
       </div>

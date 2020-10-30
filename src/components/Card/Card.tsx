@@ -1,6 +1,6 @@
 import React from "react";
 import './Card.scss'
-import bg from './img/bg.svg'
+import {ReactComponent as BG} from './img/bg.svg'
 import flag from './img/flag.svg'
 
 export default class Card extends React.Component<{},{}>{
@@ -8,9 +8,7 @@ export default class Card extends React.Component<{},{}>{
         return(
             <div className="card-container">
                 <div className="card">
-                    <div className="card-bg">
-                        <img src={bg} alt=""/>
-                    </div>
+                    <BG className="card-bg"/>
                     <div className="card-content">
                         <div className="card-top">
                             <h1 className="card-user-name">Chico <br/> Leong</h1>
@@ -22,6 +20,9 @@ export default class Card extends React.Component<{},{}>{
                         <div className="card-bot">
                             <p>Role: Marine operator</p>
                             <p>Amount of vessels matched: 172</p>
+                            <p>Amount of vessels matched: 172</p>
+                            <p>Amount of vessels matched: 172</p>
+                           
                         </div>
                     </div>
                 </div>
