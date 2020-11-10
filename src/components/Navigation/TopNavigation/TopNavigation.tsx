@@ -12,10 +12,10 @@ export default class TopNavigation extends React.Component<{},{}>{
         return(
             <div className="top-nav-container">
                 <div className="top-nav-wrapper">
-                    <NavigationComponent icon={searchLogo}/>
-                    <NavigationComponent icon={settingsLogo}/>
-                    <NavigationComponent icon={bellLogo}/>
-                    <NavigationComponent icon={profileLogo}/>
+                    <NavigationComponent icon={searchLogo} link="#"/>
+                    <NavigationComponent icon={settingsLogo} link="#"/>
+                    <NavigationComponent icon={bellLogo} link="#"/>
+                    <NavigationComponent icon={profileLogo} link="#"/>
                 </div>
             </div>
         )

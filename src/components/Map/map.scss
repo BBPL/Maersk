@@ -1,0 +1,57 @@
+.map-wrapper{
+    padding:15px;
+    align-self: flex-end;
+    width: 100%;
+    position: relative;
+    .map{
+        background-color: #BACCFD;
+        border-radius: 30px ;
+        width: auto;
+        padding: 5px;
+        // height: fit-content;
+        width: 100%;
+    }
+    .map-zoom-container{
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // align-items: center;
+        // align-content: center;
+
+        .map-zoom-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .map-zoom{
+            stroke: #BACCFD;
+            
+        }
+    }
+}
+
+#filter124_d{ //USA
+    // fill: yellow;
+    
+    path{
+        fill: yellow;
+        stroke: red;
+        background-color: yellow;
+    }
+}
+
+.port{
+    top: 10px;
+    height: 100px;
+    path{
+        stroke: yellow;
+        fill: yellow;
+    }
+}
