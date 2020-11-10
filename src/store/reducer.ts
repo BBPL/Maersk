@@ -1,26 +1,23 @@
+import { convertTypeAcquisitionFromJson } from 'typescript'
+import { ports } from '../data/ports'
 import * as actionTypes from './actionTypes'
 
-const initialState: ContainerBundleState = {
+const initialState: ApplicationState = {
     containerBundle: null,
-    res: 1
+    port: null
 }
 
 
 const reducer = (
-    state: ContainerBundleState = initialState,
-    action: ContainerAction
-):ContainerBundleState => {
+    state: ApplicationState = initialState,
+    action: TooltipAction
+):ApplicationState => {
     switch(action.type){
-        case actionTypes.UPDATE_CONTAINER:
-            return {
-                ...state,
-                containerBundle: action.containerBundle
-            }
 
-        case actionTypes.ADD_ONE:
+        case actionTypes.UPDATE_TOOLTIP:
             return {
                 ...state,
-                res: state.res + 1
+                port: action.port
             }
     }
     return state

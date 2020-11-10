@@ -10,7 +10,7 @@ type ContainerBundleProp = {
     // updateContainer: (containerBundle: IContainerBundle) => void
 }
 
-export class ContainerBundle extends React.Component<ContainerBundleProp, ContainerBundleState>{
+export class ContainerBundle extends React.Component<ContainerBundleProp, {}>{
 
     render(){
         const {name,priority,potentialRoutes,} = this.props.containerBundle;

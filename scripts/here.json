@@ -1,0 +1,335 @@
+[
+    {
+        "PID": 166,
+        "portname": "Chennai",
+        "code": "INMAA",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 13.09853,
+        "longitude": 80.2971
+    },
+    {
+        "PID": 280,
+        "portname": "Havana",
+        "code": null,
+        "country": "Cuba",
+        "iso3": "CUB",
+        "latitude": 23.15246,
+        "longitude": -81.64938
+    },
+    {
+        "PID": 436,
+        "portname": "Cartagena",
+        "code": "COCTG",
+        "country": null,
+        "iso3": null,
+        "latitude": 10.40575,
+        "longitude": -75.53294
+    },
+    {
+        "PID": 486,
+        "portname": "Beirut",
+        "code": null,
+        "country": "Lebanon",
+        "iso3": "LBN",
+        "latitude": 33.90151,
+        "longitude": 35.51784
+    },
+    {
+        "PID": 1223,
+        "portname": "Manila",
+        "code": "PHMNL",
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latitude": 14.58943,
+        "longitude": 120.9609
+    },
+    {
+        "PID": 1366,
+        "portname": "Canakkale",
+        "code": "TRCKZ",
+        "country": "Turkey",
+        "iso3": "TUR",
+        "latitude": 40.14833,
+        "longitude": 26.4023
+    },
+    {
+        "PID": 1367,
+        "portname": "Buenos Aires",
+        "code": "ARBUE",
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latitude": -34.60257,
+        "longitude": -58.3747
+    },
+    {
+        "PID": 1428,
+        "portname": "Jakarta",
+        "code": "IDJKT",
+        "country": null,
+        "iso3": null,
+        "latitude": -6.10434,
+        "longitude": 106.80256
+    },
+    {
+        "PID": 1429,
+        "portname": "Tanjung Priok",
+        "code": "IDTPP",
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latitude": -6.10492,
+        "longitude": 106.87615
+    },
+    {
+        "PID": 1642,
+        "portname": "Callao",
+        "code": "PECLL",
+        "country": "Peru",
+        "iso3": "PER",
+        "latitude": -12.04873,
+        "longitude": -77.14381
+    },
+    {
+        "PID": 1661,
+        "portname": "Suez",
+        "code": "EGSUZ",
+        "country": "Egypt",
+        "iso3": "EGY",
+        "latitude": 29.9667,
+        "longitude": 32.55
+    },
+    {
+        "PID": 1958,
+        "portname": "Alexandria",
+        "code": "EGALY",
+        "country": "Egypt",
+        "iso3": "EGY",
+        "latitude": 31.19534,
+        "longitude": 29.88146
+    },
+    {
+        "PID": 2146,
+        "portname": "Veracruz",
+        "code": "MXVER",
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latitude": 19.20223,
+        "longitude": -96.1242
+    },
+    {
+        "PID": 2495,
+        "portname": "Port Qaboos",
+        "code": "OMOPQ",
+        "country": "Oman",
+        "iso3": "OMN",
+        "latitude": 23.62772,
+        "longitude": 58.56664
+    },
+    {
+        "PID": 2531,
+        "portname": "Laem Chabang",
+        "code": "THLCH",
+        "country": "Thailand",
+        "iso3": "THA",
+        "latitude": 13.06917,
+        "longitude": 100.90117
+    },
+    {
+        "PID": 2568,
+        "portname": "Sevastopol",
+        "code": "UASVP",
+        "country": "Ukraine",
+        "iso3": "UKR",
+        "latitude": 44.60713,
+        "longitude": 33.5291
+    },
+    {
+        "PID": 2751,
+        "portname": "Santiago De Cuba",
+        "code": "CUSCU",
+        "country": null,
+        "iso3": null,
+        "latitude": 20.02726,
+        "longitude": -75.83812
+    },
+    {
+        "PID": 2763,
+        "portname": "Bandar Khomeini",
+        "code": "IRBKM",
+        "country": "Iran (Islamic Republic of)",
+        "iso3": "IRN",
+        "latitude": 30.43873,
+        "longitude": 49.0875
+    },
+    {
+        "PID": 2826,
+        "portname": "Paradip",
+        "code": "INPRT",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 20.28193,
+        "longitude": 86.6943
+    },
+    {
+        "PID": 2852,
+        "portname": "Niteroi",
+        "code": "BRNTR",
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latitude": -22.88077,
+        "longitude": -42.1315
+    },
+    {
+        "PID": 2935,
+        "portname": "Vishakhapatnam",
+        "code": "INVTZ",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 17.70333,
+        "longitude": 83.3105
+    },
+    {
+        "PID": 2957,
+        "portname": "Karachi",
+        "code": "PKKHI",
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latitude": 24.83424,
+        "longitude": 66.97856
+    },
+    {
+        "PID": 3090,
+        "portname": "Nikolayev",
+        "code": "UANIK",
+        "country": "Ukraine",
+        "iso3": "UKR",
+        "latitude": 46.94221,
+        "longitude": 31.9721
+    },
+    {
+        "PID": 3232,
+        "portname": "Mumbai",
+        "code": null,
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 18.9,
+        "longitude": 72.81667
+    },
+    {
+        "PID": 3333,
+        "portname": "Bremerhaven",
+        "code": null,
+        "country": "Germany",
+        "iso3": "DEU",
+        "latitude": 53.56246,
+        "longitude": 8.56157
+    },
+    {
+        "PID": 3334,
+        "portname": "Las Palmas",
+        "code": null,
+        "country": null,
+        "iso3": "ESP",
+        "latitude": 28.14065,
+        "longitude": -15.41614
+    },
+    {
+        "PID": 3336,
+        "portname": "Cochin",
+        "code": "INCOK",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 9.95453,
+        "longitude": 76.2447
+    },
+    {
+        "PID": 3343,
+        "portname": "Kandla",
+        "code": "INIXY",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 22.99593,
+        "longitude": 70.1941
+    },
+    {
+        "PID": 3344,
+        "portname": "Salalah",
+        "code": "OMRAY",
+        "country": "Oman",
+        "iso3": "OMN",
+        "latitude": 16.93874,
+        "longitude": 53.99858
+    },
+    {
+        "PID": 3346,
+        "portname": "Calcutta",
+        "code": "INCCU",
+        "country": "India",
+        "iso3": "IND",
+        "latitude": 22.55313,
+        "longitude": 88.3383
+    },
+    {
+        "PID": 3364,
+        "portname": "Colombo",
+        "code": "LKCMB",
+        "country": "Sri Lanka",
+        "iso3": "LKA",
+        "latitude": 6.94119,
+        "longitude": 79.8428
+    },
+    {
+        "PID": 3435,
+        "portname": "Istanbul",
+        "code": "TRIST",
+        "country": "Turkey",
+        "iso3": "TUR",
+        "latitude": 41.03413,
+        "longitude": 28.9945
+    },
+    {
+        "PID": 3512,
+        "portname": "Riga",
+        "code": "LVRIX",
+        "country": "Latvia",
+        "iso3": "LVA",
+        "latitude": 57.059,
+        "longitude": 24.032
+    },
+    {
+        "PID": 3548,
+        "portname": "Chittagong Port",
+        "code": "BDCGP",
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latitude": 22.30146,
+        "longitude": 91.79599
+    },
+    {
+        "PID": 3566,
+        "portname": "Manzanillo",
+        "code": null,
+        "country": "Panama",
+        "iso3": "PAN",
+        "latitude": 9.36077,
+        "longitude": -79.88367
+    },
+    {
+        "PID": 3567,
+        "portname": "Houston",
+        "code": null,
+        "country": "United States of America",
+        "iso3": "USA",
+        "latitude": 29.73005,
+        "longitude": -95.27215
+    },
+    {
+        "PID": 3568,
+        "portname": "Gioia Tauro",
+        "code": null,
+        "country": "Italy",
+        "iso3": "ITA",
+        "latitude": 38.45897,
+        "longitude": 15.91284
+    }
+]

@@ -6,7 +6,7 @@ import { PotentialRoute } from "../PotentialRoute/PotentialRoute";
 import './ContainerDetails.scss'
 
 export function ContainerDetails() {
-    const bundle = useSelector((state: ContainerBundleState) => state.containerBundle)
+    const bundle = useSelector((state: ApplicationState) => state.containerBundle)
     
    
     // console.log(potentialRoutes)

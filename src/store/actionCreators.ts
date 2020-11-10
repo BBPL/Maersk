@@ -1,10 +1,19 @@
 // import { ContainerAction, DispatchType, IContainerBundle } from "../type"
+import { act } from "react-dom/test-utils"
 import * as actionTypes from "./actionTypes"
 
 export function updateBundle(containerBundle: IContainerBundle){
   const action: ContainerAction = {
       type: actionTypes.UPDATE_CONTAINER,
       containerBundle
+  }
+  return action
+}
+
+export function updateToolTip(port: IPort){
+  const action: TooltipAction = {
+    type: actionTypes.UPDATE_TOOLTIP,
+    port
   }
   return action
 }

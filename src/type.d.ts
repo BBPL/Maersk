@@ -27,14 +27,30 @@ interface IRoutePort{
     status: RoutePortStatus
 }
 
-type ContainerBundleState = {
+type ApplicationState = {
+    port: IPort | null,
     containerBundle: IContainerBundle | null,
-    res: number
+    // res: number
 }
 
 type ContainerAction = {
     type: string
     containerBundle: IContainerBundle
+}
+
+interface IPort{
+    PID: number,
+    portname: string,
+    code: string | null,
+    country: string | null,
+    iso3: string | null,
+    latitude: number,
+    longitude: number
+} 
+
+type TooltipAction = {
+    type: string
+    port: IPort
 }
 
 type DispatchType = (args:ContainerAction) => ContainerAction
