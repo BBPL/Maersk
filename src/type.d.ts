@@ -30,6 +30,9 @@ interface IRoutePort{
 type ApplicationState = {
     port: IPort | null,
     containerBundle: IContainerBundle | null,
+    ports: IPort[],
+    portsStatus: "idle" | 'loading' | 'succeeded' | 'failed',
+    error: string | null
     // res: number
 }
 

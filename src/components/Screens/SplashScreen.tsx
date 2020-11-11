@@ -1,10 +1,10 @@
-import React, { Dispatch, useState } from "react";
+import React, { Dispatch, useEffect, useState } from "react";
 import Card from "../Card/Card";
 import SmallCard from "../Card/SmallCard";
 import Map from './../Map/Map'
 import ReactTooltip from "react-tooltip";
 import { useDispatch, useSelector } from "react-redux";
-import { updateToolTip } from "../../store/actionCreators";
+import { fetchPorts, updateToolTip } from "../../store/actionCreators";
 
 
 export default function SplashScreen() {
@@ -18,16 +18,22 @@ export default function SplashScreen() {
         (port: IPort) => dispatch(updateToolTip(port)),
         [dispatch, updateToolTip]
     )
+    
+    // const portsStatus = useSelector<ApplicationState>(state => state.portsStatus)
+    // useEffect(() => {
+    //     if(portsStatus === 'idle'){
+    //         dispatch(fetchPorts())
+    //     }
+    // }, [portsStatus, dispatch])
 
     const name = port ? port.portname : ""
     return (
         <div className="body-content">
+
             <Map updateContent={updateContent} />
             <SmallCard />
             <SmallCard />
             <SmallCard />
-            {/* <p data-tip="hello world">Tooltip</p> */}
-            {/* <ReactTooltip /> */}
             <Card />
         </div>
     )

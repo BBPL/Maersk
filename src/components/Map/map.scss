@@ -7,12 +7,7 @@
     .map{
         background-color: #BACCFD;
         border-radius: 30px ;
-        // width: 400px;
-        // width: auto;
-        // padding: 5px;
-        // height: fit-content;
-        // transform: scale();
-        // width: 100%;
+
     }
     .map-zoom-container{
         position: absolute;
@@ -50,23 +45,27 @@
     }
 }
 
-.port{
-    top: 10px;
-    height: 100px;
-    path{
-        stroke: yellow;
-        fill: yellow;
-    }
-}
+// .port{
+//     top: 10px;
+//     height: 100px;
+//     path{
+//         stroke: yellow;
+//         fill: yellow;
+//     }
+// }
 
 .tested{
     fill: #F4F5F7;
     border: 1px solid black;
     // outline: 1px solid black;
     &:hover{
-        fill:yellow;
+        fill:darken($color: #F4F5F7, $amount: 5%);
     }
     &:focus{
         outline: none;
     }
+}
+
+.marker-box{
+    pointer-events: bounding-box;
 }

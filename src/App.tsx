@@ -8,7 +8,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PortScreen from './components/Screens/PortScreen';
 import CargoScreen from './components/Screens/CargoScreen';
 import ReasoningScreen from './components/Screens/ReasoningScreen';
+import { ports } from './data/ports';
+import { portsRef } from './data/firebase';
 
+// ports.forEach((port, index) => {
+//   portsRef.doc(port.PID.toString()).set(port)
+//   console.log(`adding port ${port?.PID}`)
+// })
 
 // function App() {
 class App extends React.Component<{}, {}>{

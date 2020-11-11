@@ -1,18 +1,19 @@
 import firebase from 'firebase/app'
 import "firebase/firestore"
 
-// const config = {
-//     apiKey: process.env.REACT_APP_APIKEY,
-//     databaseURL: process.env.REACT_APP_DB,
-//     projectId: process.env.REACT_APP_PID,
-// };
-const config = {
+var config = {
     apiKey: "AIzaSyC9RSxohY-SNKwAvwPEj6HFbZWmEZRqqnM",
-    // databaseURL: "https://maersk-bbpl.firebaseio.com/",
-    databaseURL: "https://maersk.kisiel.dk/databases/maersk-bbpl/documents",
+    authDomain: "maersk-bbpl.firebaseapp.com",
+    databaseURL: "https://maersk-bbpl.firebaseio.com",
     projectId: "maersk-bbpl",
-};
+    storageBucket: "maersk-bbpl.appspot.com",
+    messagingSenderId: "801797662883",
+    appId: "1:801797662883:web:8b3953ae0d02421553b716"
+  };
 firebase.initializeApp(config);
 const databaseRef = firebase.firestore()
+
+export const portsRef = databaseRef.collection("ports")
+
 export const userRef = databaseRef.collection("users")
 export default firebase;
