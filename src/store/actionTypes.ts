@@ -3,3 +3,5 @@ export const REMOVE_ARTICLE = "REMOVE_ARTICLE"
 export const UPDATE_CONTAINER = "UPDATE_CONTAINER"
 
 export const ADD_ONE = "ADD_ONE"
+export const UPDATE_TOOLTIP = "UPDATE_TOOLTIP"
+export const GET_PORTS = "GET_PORTS"

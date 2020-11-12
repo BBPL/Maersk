@@ -4,14 +4,13 @@ interface IContainerBundle{
     name: string
     cause: string
     priority: number 
-    potentialRoutes: IRouteProposition[]
+    potentialRoutes: IRouteProposition[],
+    highRisk: boolean
 }
-
-// enum ContainerStatus{
-//     Low,
-//     Medium,
-//     High
-// }
+interface IBundlePhrase{
+    phrase:string,
+    meaning:string
+}
 
 interface IRouteProposition{
     name: string
@@ -27,14 +26,50 @@ interface IRoutePort{
     status: RoutePortStatus
 }
 
-type ContainerBundleState = {
+type ApplicationState = {
+    port: IPort | null,
     containerBundle: IContainerBundle | null,
-    res: number
+    ports: IPort[],
+    portsStatus: "idle" | 'loading' | 'succeeded' | 'failed',
+    error: string | null
+    // res: number
 }
 
 type ContainerAction = {
     type: string
     containerBundle: IContainerBundle
+}
+
+interface IPort{
+    PID: number,
+    portname: string,
+    code: string | null,
+    country: string | null,
+    iso3: string | null,
+    latitude: number,
+    longitude: number
+} 
+
+type TooltipAction = {
+    type: string
+    port: IPort
+}
+
+type PortState = {
+    current: IPort | null,
+    ports: IPort[],
+    loading: boolean
+}
+
+type PortAction = {
+    type: string,
+    ports: IPort[],
+}
+
+type ApplicationProps = {
+    user:any,
+    signOut:any,
+    signInWithGoogle:any
 }
 
 type DispatchType = (args:ContainerAction) => ContainerAction

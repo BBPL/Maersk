@@ -1,8 +1,11 @@
-import React, { Component, Dispatch } from 'react'
+import React from 'react'
 import { ContainerStatus } from '../../data/enum'
 import { getRandomInt } from '../../data/helper'
+import { ports } from '../../data/ports'
+import { randomDate } from '../../services/dateService'
 import './ContainerBundle.scss'
 import divider from './img/divider.svg'
+import { ReactComponent as Warn } from './img/warn.svg'
 
 
 type ContainerBundleProp = {
@@ -10,31 +13,22 @@ type ContainerBundleProp = {
     // updateContainer: (containerBundle: IContainerBundle) => void
 }
 
-export class ContainerBundle extends React.Component<ContainerBundleProp, ContainerBundleState>{
+export class ContainerBundle extends React.Component<ContainerBundleProp, {}>{
 
     render(){
-        const {name,priority,potentialRoutes,} = this.props.containerBundle;
+        const {name, priority, highRisk} = this.props.containerBundle;
+        const prio = ContainerStatus[priority].toUpperCase()
+        const port = ports[getRandomInt(ports.length)]
         return(
             <tr>
+                <td>{highRisk ? <Warn/> : ''}</td>
                 <td className="bundle-name">{name}</td>
-                <td className="bundle-status">{ContainerStatus[priority]}</td>
-                <td className="bundle-arrival">{potentialRoutes[getRandomInt(3)].name}</td>
-                <td className="bundle-price">{potentialRoutes[0].costSaving}</td>
+                <td className={"bundle-status " + prio.toLowerCase()}>{prio}</td>
+                <td className="bundle-arrival">{port.portname}, {port.iso3}</td>
+                <td className="bundle-price">{randomDate()}</td>
                 <td className="divider"><img src={divider} alt="Divider"/></td>
-                <td className="suggestion">
-                    <div className="suggested-actions-btn">Suggested Actions</div>
-                </td>
+                <td className="suggestion">MANAGE CARGO</td>
             </tr>
         )
     }
-
-    // render(){
-    //     const {name, priority} = this.props.containerBundle
-    //     return (
-    //         <div className="bundle-wrapper" onClick={() => this.props.updateContainer(this.props.containerBundle)}>
-    //             <h3>{name}</h3>
-    //             <p>{ContainerStatus[priority]}</p>
-    //         </div>
-    //     )
-    // }
 }

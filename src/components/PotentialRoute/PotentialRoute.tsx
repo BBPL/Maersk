@@ -1,6 +1,5 @@
 import React from "react";
-import { Component, FunctionComponent } from "react";
-import { RoutePortStatus } from "../../data/enum";
+import { Component } from "react";
 
 type PotentialRouteProp = {
     route: IRouteProposition
@@ -24,18 +23,6 @@ export class PotentialRoute extends Component<PotentialRouteProp, {}>{
                         <div className="item-brc item"></div>
                         <div className="item-blc item"></div>
                     </div>
-                    {/* <div className="route-details">
-                        <div className="detail-item">
-                            <p>Bunker pricing: -{bunkerPricing}$</p>
-                        </div>
-                        {/* <p>Cost: -{costSaving}$</p>
-                        {ports.map((port, index) => (
-                            <div>
-                                <p>{port.name}</p>
-                                <p>{RoutePortStatus[port.status]}</p>
-                            </div>
-                        ))} */}
-                    {/* </div> */}
                 </div>
             </div>
         )

@@ -1,10 +1,6 @@
 import React, { Dispatch } from 'react'
 import './t.scss'
-import { ContainerBundle } from '../ContainerBundle/ContainerBundle'
-// import { useDispatch } from 'react-redux'
 import { updateBundle } from '../../store/actionCreators'
-import { ContainerStatus } from '../../data/enum'
-import { getRandomInt } from '../../data/helper'
 import { containerBundle1, containerBundle2, containerBundle3 } from '../../data/mock/containerBundles'
 import { useDispatch } from 'react-redux'
 
@@ -26,9 +22,6 @@ export const Container = () => {
                 <p className="split">|</p>
                 <p className="bundlePriority">Priority</p>
             </div>
-            {/* {containerBundles.map((cb, index) => (
-                // <ContainerBundle containerBundle={cb} updateContainer={updateContainer} />
-            ))} */}
         </div>
     )
 }
