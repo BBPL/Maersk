@@ -1,4 +1,5 @@
 import React from "react";
+import { signOutWithGoogle } from "../../../data/firebase";
 import NavigationComponent from "../NavigationComponent/NavigationComponent";
 import bellLogo from './img/bell.svg';
 import profileLogo from './img/profile.svg'
@@ -12,7 +13,7 @@ export default class TopNavigation extends React.Component<{},{}>{
         return(
             <div className="top-nav-container">
                 <div className="top-nav-wrapper">
-                    <NavigationComponent icon={searchLogo} link="#"/>
+                    <NavigationComponent icon={searchLogo} link="#" onClick={signOutWithGoogle}/>
                     <NavigationComponent icon={settingsLogo} link="#"/>
                     <NavigationComponent icon={bellLogo} link="#"/>
                     <NavigationComponent icon={profileLogo} link="#"/>

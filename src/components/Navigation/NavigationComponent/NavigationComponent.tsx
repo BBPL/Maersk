@@ -5,7 +5,8 @@ import './../../../App.scss'
 type NavigationComponentProp = {
     name?: string,
     link: string,
-    icon: string
+    icon: string,
+    onClick?: any
 }
 
 export default class NavigationComponent extends React.Component<NavigationComponentProp, {}> {
@@ -26,7 +27,7 @@ export default class NavigationComponent extends React.Component<NavigationCompo
             )
         } else {
             return (
-                <div className="nav-component-wrapper">
+                <div className="nav-component-wrapper" onClick={this.props.onClick}>
                     <div className="nav-component-icon">
                         <img src={this.props.icon} alt={this.props.name} />
                     </div>

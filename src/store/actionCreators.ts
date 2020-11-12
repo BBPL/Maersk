@@ -1,6 +1,7 @@
 // import { ContainerAction, DispatchType, IContainerBundle } from "../type"
-import { createAsyncThunk } from "@reduxjs/toolkit"
+import { Dispatch } from "react"
 import { act } from "react-dom/test-utils"
+import { useDispatch } from "react-redux"
 import { portsRef } from "../data/firebase"
 import * as actionTypes from "./actionTypes"
 
@@ -20,17 +21,15 @@ export function updateToolTip(port: IPort) {
   return action
 }
 
-export function fetchPorts() {
-  let res: IPort[] = []
-  portsRef.get().then((querySnapshot) => {
-    querySnapshot.docs.map((port) => {
-      res.push(port.data() as IPort)
-    })
-    // console.log("hello")
-    console.log(res.length)
-  })
-  return res
+export function setPorts(ports: IPort[]) {
+  const action: PortAction = {
+    type: actionTypes.GET_PORTS,
+    ports: []
+  }
+  return action
 }
+
+
 
 // const ports:IPort[] = []
 // const getPorts = portsRef.get().then((x) => {

@@ -56,4 +56,21 @@ type TooltipAction = {
     port: IPort
 }
 
+type PortState = {
+    current: IPort | null,
+    ports: IPort[],
+    loading: boolean
+}
+
+type PortAction = {
+    type: string,
+    ports: IPort[],
+}
+
+type ApplicationProps = {
+    user:any,
+    signOut:any,
+    signInWithGoogle:any
+}
+
 type DispatchType = (args:ContainerAction) => ContainerAction

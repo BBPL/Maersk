@@ -1,6 +1,3 @@
-import { convertTypeAcquisitionFromJson } from 'typescript'
-import { portsRef } from '../data/firebase'
-import { fetchPorts } from './actionCreators'
 // import { ports } from '../data/ports'
 import * as actionTypes from './actionTypes'
 
@@ -8,7 +5,7 @@ import * as actionTypes from './actionTypes'
 const initialState: ApplicationState = {
     containerBundle: null,
     port: null,
-    ports: fetchPorts(),
+    ports: [],
     error: null,
     portsStatus: 'idle'
 }
