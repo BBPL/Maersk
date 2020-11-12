@@ -38,6 +38,8 @@ export function MarkerComponent({ updateContent, ports }: MarkerComponentProps) 
         <>
             {markers(ports).map((marker, index) => (
                 <Marker
+                    // id="marker"
+                    data-for="marker"
                     data-tip={marker.name}
                     // data-type="warning"
                     key={index}

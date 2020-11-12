@@ -30,7 +30,7 @@ export default function Map({ updateContent, ports }: MapProps) {    // render()
                 </Geographies>
                 <MarkerComponent updateContent={updateContent} ports={ports} />}
             </ComposableMap>
-            <ReactTooltip>{current?.portname}, {current?.iso3}</ReactTooltip>
+            <ReactTooltip id="marker">{current?.portname}, {current?.iso3}</ReactTooltip>
         </div>
     )
 }
