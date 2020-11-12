@@ -1,19 +1,17 @@
-import React, { Dispatch, useContext, useEffect, useState } from "react";
+import React, { Dispatch } from "react";
 import Card from "../Card/Card";
 import SmallCard from "../Card/SmallCard";
 import Map from './../Map/Map'
-import { RootStateOrAny, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateToolTip } from "../../store/actionCreators";
-import { getPorts } from "../../services/portService";
-import { getFirestore } from "redux-firestore";
-import { getFirebase, useFirebaseConnect, useFirestoreConnect } from "react-redux-firebase";
+import { useFirestoreConnect } from "react-redux-firebase";
 import { RootState } from "../../store/fireReducer";
 
 
 export default function SplashScreen() {
     // export default class SplashScreen extends React.Component<{}, ApplicationState>{
-    const [isLoading, setIsLoading] = useState<boolean>(true)
-    const [ports, setPorts] = useState<IPort[]>([])
+    // const [isLoading, setIsLoading] = useState<boolean>(true)
+    // const [ports, setPorts] = useState<IPort[]>([])
 
     const dispatch: Dispatch<any> = useDispatch()
  

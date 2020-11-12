@@ -1,4 +1,4 @@
-import React, { SVGProps } from "react"
+import React from "react"
 import NavigationComponent from "./NavigationComponent/NavigationComponent"
 import './Navigation.scss'
 import allgameslogo from './../../img/allgames.svg'
@@ -7,7 +7,6 @@ import livegameslogo from './../../img/livegames.svg'
 import statisticslogo from './../../img/statistics.svg'
 type NavigationBarProps = {
     logo: string
-     // title: string | undefined
 }
 
 export default class NavigationBar extends React.Component<NavigationBarProps,{}>{

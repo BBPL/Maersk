@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM, { render } from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import { ContainerAction, ContainerBundleState, DispatchType } from './type';
-import { applyMiddleware, compose, createStore, Store } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
 import firebase from './data/firebase';
 import { rootReducer } from './store/fireReducer';
 import { createFirestoreInstance } from 'redux-firestore'
-import { config } from 'process';
 
 const dev = (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 
@@ -22,6 +21,9 @@ const rrfConfig = {
 
 const initialState = {}
 const store = createStore(rootReducer, initialState, dev)
+// const {persistor, store} = persist()
+
+
 const rrfProps = {
   firebase,
   config: rrfConfig,
@@ -32,9 +34,11 @@ const rrfProps = {
 const rootElement = document.getElementById("root")
 render(
   <Provider store={store}>
-    <ReactReduxFirebaseProvider {...rrfProps}>
-      <App />
-    </ReactReduxFirebaseProvider>
+    {/* <PersistGate loading={<div>Loading or something{console.log("wat")}</div>} persistor={persistor}> */}
+      <ReactReduxFirebaseProvider {...rrfProps}>
+        <App />
+      </ReactReduxFirebaseProvider>
+    {/* </PersistGate> */}
   </Provider>,
   rootElement
 )

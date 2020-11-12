@@ -1,9 +1,6 @@
 import React from "react";
 import  {ReactComponent as Up} from './img/up.svg'
 import {ReactComponent as CardBG} from './img/card.svg'
-import down from './img/down.svg'
-
-
 
 export default class SmallCard extends React.Component<{}, {}>{
 

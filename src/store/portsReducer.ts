@@ -1,6 +1,4 @@
-import { getPorts } from '../services/portService'
 import * as actionTypes from './actionTypes'
-
 
 const initialState: PortState = {
     current: null,

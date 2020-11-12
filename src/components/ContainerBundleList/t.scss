@@ -4,40 +4,42 @@ $darker: darken($color,30%);
 
 
 .table-wrapper{
-    width: auto;
-    
+    width: 100%;
+    padding-top: 10px;
+    height: 80vh;
     .container-table{
-        border-spacing: 10px;
+        // max-height: 90vh;
+        border-spacing: 15px;
+        width: 100%;
     }
     .table-heading th{
         text-align: center;
         color: #353E6C;
+        font-size: medium;
+        font-weight: 500;
     }
 }
 th, td{
     padding: 4px 20px 4px 20px;
+    text-align: center;
 }
 
-tbody{
-    overflow-y: auto;
-}
 
-.table-containers{
-    width: 100%;
-}
+
 tr{
     td{
-        border-radius: 15px;
+        border-radius: 10px;
         line-height:normal;
-        font-size: medium;
+        font-size: small;
         // display: inline-block;
     }
     .bundle-name{
         background-color: #BACCFD;
+        color: #353E6C;
     }
-    .bundle-status{
-        background-color: #C1E4B4;
-    }
+    // .bundle-status{
+    //     background-color: #C1E4B4;
+    // }
     .bundle-arrival,.bundle-price{
         background-color: #EDF2FF;
     }
@@ -45,46 +47,28 @@ tr{
         background-color: #FFF5D9;
         color: #FFBB38;
     }
-    // padding: 5px;
 }
 p{
     padding: 4px;
 }
 .divider{
     padding:0;
+    // width: %;
     img{
         height: 15px;
     }
 }
 
-// .containerListWrapper{
-//     height: 100vh;
-//     width: 30vw;
-//     background-color:darken(#c8c8c8,2%);
-//     border-right: 1px solid darken(#c8c8c8,8%);
-//     display: flex;
-//     color:	#101010;
-//     flex-direction: column;
-//     .containerHeader{
-//         display:flex;
-//         width:auto;
-//         flex-direction: row;
-//         text-align: center;
-//         padding: 5px;
-//         font-size: large;
-//         // height: 80px;
-//         border-bottom: 1px black solid;
-//         align-items: center;
-//         // border-bottom: 4px darken(#282c34, 10);
-//         .bundleName, .bundlePriority{
-//             flex-grow: 1;
-//         }
-//         .split{
-//             flex-grow: 1;
-//             color:black;
-//         }
-
-//     }
-// }
 
 
+.low{
+    background-color: #C1E4B4;
+}
+
+.medium{
+    background-color: #FFB347;
+}
+
+.high{
+    background-color: #F44771;
+}

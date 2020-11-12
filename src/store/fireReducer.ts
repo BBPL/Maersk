@@ -1,5 +1,5 @@
 import { combineReducers, Reducer } from "@reduxjs/toolkit";
-import { firebaseReducer, FirebaseReducer, FirestoreReducer } from "react-redux-firebase";
+import { firebaseReducer, FirebaseReducer } from "react-redux-firebase";
 import { firestoreReducer } from "redux-firestore";
 import portReducer from "./portsReducer";
 

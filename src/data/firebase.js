@@ -26,7 +26,7 @@ export const providers = {
 const provider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () => {
   auth.signInWithPopup(provider).then(function(result){
-    var token = result.credential.accessToken
+    // var token = result.credential.accessToken
     var user = result.user
     console.log(user.email)
     return user

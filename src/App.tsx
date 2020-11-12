@@ -8,33 +8,22 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PortScreen from './components/Screens/PortScreen';
 import CargoScreen from './components/Screens/CargoScreen';
 import ReasoningScreen from './components/Screens/ReasoningScreen';
-import { ports } from './data/ports';
-import { portsRef } from './data/firebase';
 import LoginScreen from './components/Screens/LoginScreen';
 import { useSelector } from 'react-redux';
-import { FirebaseReducer, ProfileType, useFirebase, useFirebaseConnect } from 'react-redux-firebase';
+import { FirebaseReducer, ProfileType } from 'react-redux-firebase';
 import { RootState } from './store/fireReducer';
-// ports.forEach((port, index) => {
-//   portsRef.doc(port.PID.toString()).set(port)
-//   console.log(`adding port ${port?.PID}`)
-// })
 
 
 function App() {
-// class App extends React.Component<{}, {}>{
-  // const firebase = useFirebase()
-  const {isEmpty} = useSelector<RootState,FirebaseReducer.Profile<ProfileType>>(state => state.firebase.auth)
-  // const r = useFirebaseConnect(e => e.)
-  // render() {
-    if (!isEmpty) {
-      return <LoggedIn />
-    } else {
-      return (
-        <Router>
-          <Route exact path="/" component={LoginScreen} />
-        </Router>)
-    }
-  // }
+  const { isEmpty } = useSelector<RootState, FirebaseReducer.Profile<ProfileType>>(state => state.firebase.auth)
+  if (!isEmpty) {
+    return <LoggedIn />
+  } else {
+    return (
+      <Router>
+        <Route exact path="/" component={LoginScreen} />
+      </Router>)
+  }
 }
 
 function LoggedIn() {

@@ -1,5 +1,4 @@
 import React from "react"
-import { useParams } from "react-router-dom"
 import Card from "../Card/Card"
 
 type ReasoningProps = {
@@ -10,7 +9,7 @@ type ReasoningProps = {
 
 export default function ReasoningScreen(){
 
-    const { portId, cargoId, choiceId } = useParams<ReasoningProps>()
+    // const { portId, cargoId, choiceId } = useParams<ReasoningProps>()
  
 
     return(

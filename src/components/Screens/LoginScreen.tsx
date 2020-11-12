@@ -1,13 +1,12 @@
-import { render } from "@testing-library/react";
-import React, { useState } from "react";
+import React from "react";
 import { signInWithGoogle } from "../../data/firebase";
 
 import './screens.scss'
 
 export default function LoginScreen() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState(null);
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [error, setError] = useState(null);
 
     return (
         <div className="login-wrapper">

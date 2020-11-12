@@ -4,14 +4,13 @@ interface IContainerBundle{
     name: string
     cause: string
     priority: number 
-    potentialRoutes: IRouteProposition[]
+    potentialRoutes: IRouteProposition[],
+    highRisk: boolean
 }
-
-// enum ContainerStatus{
-//     Low,
-//     Medium,
-//     High
-// }
+interface IBundlePhrase{
+    phrase:string,
+    meaning:string
+}
 
 interface IRouteProposition{
     name: string

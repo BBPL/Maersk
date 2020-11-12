@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { ContainerStatus } from "../../data/enum";
 import { PotentialRoute } from "../PotentialRoute/PotentialRoute";
@@ -8,10 +8,6 @@ import './ContainerDetails.scss'
 export function ContainerDetails() {
     const bundle = useSelector((state: ApplicationState) => state.containerBundle)
     
-   
-    // console.log(potentialRoutes)
-    
-
     if (!bundle)
         return (<div className="container-details" />)
     return (

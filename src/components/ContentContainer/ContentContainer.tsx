@@ -2,7 +2,6 @@ import React from "react";
 import './ContentContainer.scss'
 
 type ContentContainerProps = {
-    // children?: ChildNode,
     smallContainer?: boolean,
     wrapperStyle?:string,
     containerStyle?:string
