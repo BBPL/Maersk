@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { ContainerStatus } from '../../data/enum'
 import { getRandomInt } from '../../data/helper'
 import { ports } from '../../data/ports'
@@ -13,24 +13,26 @@ type ContainerBundleProp = {
     containerBundle: IContainerBundle,
     // updateContainer: (containerBundle: IContainerBundle) => void
 }
+type ParamProp = {
+    portId: string
+}
 
-export class ContainerBundle extends React.Component<ContainerBundleProp, {}>{
+export function ContainerBundle(props: ContainerBundleProp){
     
+    const { portId } = useParams<ParamProp>()
 
-    render() {
-        const { name, priority, highRisk } = this.props.containerBundle;
-        const prio = ContainerStatus[priority].toUpperCase()
-        const port = ports[getRandomInt(ports.length)]
-        return (
-            <tr>
-                <td>{highRisk ? <Warn /> : ''}</td>
-                <td className="bundle-name">{name}</td>
-                <td className={"bundle-status " + prio.toLowerCase()}>{prio}</td>
-                <td className="bundle-arrival">{port.portname}, {port.iso3}</td>
-                <td className="bundle-price">{randomDate()}</td>
-                <td className="divider"><img src={divider} alt="Divider" /></td>
-                <td className="suggestion"><Link to={`/port/${port.PID}/cargo/${1}`}>Manage Cargo</Link></td>
-            </tr>
-        )
-    }
+    const { name, priority, highRisk, id } = props.containerBundle;
+    const prio = ContainerStatus[priority].toUpperCase()
+    const port = ports[getRandomInt(ports.length)]
+    return (
+        <tr>
+            <td>{highRisk ? <Warn /> : ''}</td>
+            <td className="bundle-name">{id}{name}</td>
+            <td className={"bundle-status " + prio.toLowerCase()}>{prio}</td>
+            <td className="bundle-arrival">{port.portname}, {port.iso3}</td>
+            <td className="bundle-price">{randomDate()}</td>
+            <td className="divider"><img src={divider} alt="Divider" /></td>
+            <td className="suggestion"><Link to={`/port/${portId}/cargo/${id}`}>Manage Cargo</Link></td>
+        </tr>
+    )
 }

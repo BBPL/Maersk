@@ -35,7 +35,6 @@ export default function SplashScreen() {
     }else {
         return (
             <div className="body-content">
-
                 <Map updateContent={updateContent} ports={portsed} />
                 <SmallCard class="yellow"/>
                 <SmallCard class="red"/>

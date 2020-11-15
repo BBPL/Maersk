@@ -40,3 +40,18 @@ export const randBundle: IContainerBundle = {
     highRisk: !!Math.floor(Math.random()*2)
 }
 
+export const bundles: IContainerBundle[] = []
+export const genBundles = (n:number) => {
+    for (let i = 0; i < n; i++) {
+        const randBundle: IContainerBundle = {    
+            id: i,
+            name: bundleNames[getRandomInt(bundleNames.length-1)].phrase,
+            cause: bundleNames[getRandomInt(bundleNames.length-1)].meaning,
+            priority: getRandomInt(3),
+            potentialRoutes: genPotentialRoutes(),
+            highRisk: !!Math.floor(Math.random()*2)
+        }
+        bundles.push(randBundle)
+    }
+    // return bundles
+}
