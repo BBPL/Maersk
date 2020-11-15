@@ -149,3 +149,25 @@
     }
 }
 
+.grouping-container{
+    padding: 15px;
+    width: 50%;
+    .grouping{
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 15px;
+        
+        >div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        >h1{
+            padding:15px;
+            font-size: x-large;
+        }
+    }
+}

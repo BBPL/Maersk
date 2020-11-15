@@ -1,5 +1,6 @@
 import React from "react"
 import Card from "../Card/Card"
+import Grouping from "../Card/Grouping"
 
 type ReasoningProps = {
     portId: string,
@@ -19,9 +20,11 @@ export default function ReasoningScreen(){
                 <form className="form-container">
                     <h1>Decision feedback</h1>
                     <textarea placeholder="Write your decision here"/>
-                    <button>Post</button>
+                    <div className="post-btn">Post</div>
                 </form>
             </div>
+            <Grouping/>
+            <Grouping/>
         </div>
     )
 }

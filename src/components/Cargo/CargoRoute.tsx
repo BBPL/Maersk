@@ -14,7 +14,7 @@ export default function CargoRoute(props: CargoRouteProp) {
 
     return (
         <div className="route">
-            <h1>Route A</h1>
+            <h1>Route {props.id}</h1>
             <PortInfo />
             <PortInfo class="route-metrics" />
             <Link to={`/port/${portId}/cargo/${cargoId}/choice/${props.id}`} className="confirm-route-btn">Confirm Route</Link>
