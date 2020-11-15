@@ -6,7 +6,7 @@ import CargoRoute from "../Cargo/CargoRoute";
 import PortInfo from "../Cargo/PortInfo";
 import { ContainerBundle } from "../ContainerBundle/ContainerBundle";
 
-type CargoProps = {
+export type CargoProps = {
     portId: string,
     cargoId: string,
 }
@@ -34,9 +34,9 @@ export default function CargoScreen() {
                         <div>5</div>
                     </div>
                     <div className="routes">
-                       <CargoRoute/>
-                       <CargoRoute/>
-                       <CargoRoute/>
+                       <CargoRoute id={1}/>
+                       <CargoRoute id={2}/>
+                       <CargoRoute id={3}/>
                     </div>
                 </div>
             </div>
