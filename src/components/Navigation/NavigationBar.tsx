@@ -23,6 +23,7 @@ export default class NavigationBar extends React.Component<NavigationBarProps, {
     render() {
         return (
             <NewNavigation />
+            // <NewNavigation />
             // <div className="nav-wrapper">
             //     <div className="nav-logo">
             //         <img src={this.props.logo} alt="Mærsk"/>

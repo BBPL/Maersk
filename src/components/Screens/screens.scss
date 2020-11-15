@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    // background-color: red;
     background-color: darken($color: #F4F5F7, $amount: 3);
     > .logo{
         width: 150px;
@@ -28,12 +29,14 @@
             border-radius: 15px;
             outline:none;
             background-color: #42B0D5;
+            transition: 0.1s ease-in;
             > p{
                 padding:15px;
                 color:#FFFFFE;
             }
             &:hover{
                 cursor: pointer;
+                background-color: lighten($color: #42B0D5, $amount: 10);
                 >p {
 
                     color: darken(#FFFFFE,10);
