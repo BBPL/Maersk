@@ -36,10 +36,10 @@ export default function SplashScreen() {
         return (
             <div className="body-content">
 
-                <Map updateContent={updateContent} ports={portsed} />
-                <SmallCard />
-                <SmallCard />
-                <SmallCard />
+                {/* <Map updateContent={updateContent} ports={portsed} /> */}
+                <SmallCard class="yellow"/>
+                <SmallCard class="red"/>
+                <SmallCard class="blue"/>
                 <Card />
             </div>
         )

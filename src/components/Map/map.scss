@@ -2,13 +2,16 @@
     padding:15px;
     align-self: flex-end;
     width: 100%;
-    // height: fit-constents;
-    position: relative;
+    // position: relative;
     .map{
         background-color: #BACCFD;
         border-radius: 30px ;
-
+        max-height: 70vh;
     }
+    // .rsm-svg{
+    //     height: 600px;
+    // }
+
     .map-zoom-container{
         position: absolute;
         bottom: 35px;

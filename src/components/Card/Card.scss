@@ -53,19 +53,69 @@
     
 }
 
+.yellow{
+    background-color: #FF9A3E;
+    > .sc{
+        > .rect-bot{
+            fill: #FFC087;
+        }
+        > .rect-mid{
+            fill: #FFD3AB;
+            opacity: 0.7;
+        }
+        > .rect-top{
+            stroke: white;
+            stroke-opacity: 0.3;
+        }
+    }
+}
+
+
+.red{
+    background-color: #F44771;
+    > .sc{
+        > .rect-bot{
+            fill: #FF7193;
+        }
+        > .rect-mid{
+            fill: #FFFFFF;
+            opacity: 0.3;
+        }
+        > .rect-top{
+            stroke: white;
+            stroke-opacity: 0.3;
+        }
+    }
+}
+
+.blue{
+    background-color: #332A7C;
+    > .sc{
+        > .rect-bot{
+            fill: #C7C1F6;
+        }
+        > .rect-mid{
+            fill: #7F77C5;
+            opacity: 0.7;
+        }
+        > .rect-top{
+            stroke: white;
+            stroke-opacity: 0.3;
+        }
+    }
+}
+
 .small-card-container{
-    width: fit-content;
-    height: fit-content;
     position: relative;
     padding: 15px;
+    width: 300px;
     .small-card{
         overflow: hidden;
         position: relative;
         border-radius: 30px;
-        width: auto;
-        height: auto;
-        background-color: #F44771;
-    
+        // background-color: #F44771;
+        // background-color: #FF9A3E;
+        
         .sc-content{
             position: relative;
             display: flex;
@@ -98,3 +148,4 @@
         }
     }
 }
+
