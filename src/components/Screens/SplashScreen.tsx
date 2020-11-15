@@ -24,7 +24,7 @@ export default function SplashScreen() {
         'ports'
     ])
     const portsed = useSelector<RootState,IPort[]>((state) => state.firestore.ordered.ports as IPort[])
-    console.log("portsed " + portsed)
+    // console.log("portsed " + portsed)
     // const firestore = getFirestore()
     if(!portsed){
         return (
@@ -36,7 +36,7 @@ export default function SplashScreen() {
         return (
             <div className="body-content">
 
-                {/* <Map updateContent={updateContent} ports={portsed} /> */}
+                <Map updateContent={updateContent} ports={portsed} />
                 <SmallCard class="yellow"/>
                 <SmallCard class="red"/>
                 <SmallCard class="blue"/>

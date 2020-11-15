@@ -10,7 +10,7 @@ export default function Card() {
                 <BG className="card-bg" />
                 <div className="card-content">
                     <div className="card-top">
-                        <h1 className="card-user-name">Chico <br /> Leong</h1>
+                        <h1 className="card-user-name">Chico Leong</h1>
                         <div className="country-info">
                             <img src={flag} alt="" />
                             <p>Monaco</p>
@@ -18,6 +18,7 @@ export default function Card() {
                     </div>
                     <div className="card-bot">
                         <p>Role: Marine operator</p>
+                        <p>Amount of fixed contingencies: 73</p>
                     </div>
                 </div>
             </div>
