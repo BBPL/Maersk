@@ -23,18 +23,6 @@ export default class NavigationBar extends React.Component<NavigationBarProps, {
     render() {
         return (
             <NewNavigation />
-            // <NewNavigation />
-            // <div className="nav-wrapper">
-            //     <div className="nav-logo">
-            //         <img src={this.props.logo} alt="Mærsk"/>
-            //     </div>
-            //     <div className="nav-items-wrapper">
-            //         <NavigationComponent icon={allgameslogo} name="All games" link="/"/>
-            //         <NavigationComponent icon={livegameslogo} name="Live games" link="/port/1"/>
-            //         <NavigationComponent icon={categorieslogo} name="Categories" link="/port/1/cargo/1"/>
-            //         <NavigationComponent icon={statisticslogo} name="Statistics" link="/port/1/cargo/1/choice/1"/>
-            //     </div>
-            // </div>
         )
     }
 }
@@ -50,7 +38,7 @@ function NewNavigation() {
                 <Link to="/" data-tip="Mail" data-for="navigation">
                     <Mail className="logo" />
                 </Link>
-                <Link to="/" data-tip="Games" data-for="navigation">
+                <Link to="/" data-tip="Games" data-for="navigation" className="active">
                     <Games className="logo" />
                 </Link>
                 <Link to="/" data-tip="Settings" data-for="navigation">
