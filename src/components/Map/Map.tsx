@@ -19,7 +19,7 @@ export default function Map({ updateContent, ports }: MapProps) {    // render()
     const { current } = useSelector<RootState, PortState>(state => state.ports)
     return (
         <div className="map-wrapper">
-            <ComposableMap className="map" projectionConfig={{ scale: 200 }}>
+            <ComposableMap className="map" height={465} width={800} >
                 <Geographies geography={geoUrl}>
                     {({ geographies }) => geographies.map(geo => (
                         <Geography
@@ -30,7 +30,7 @@ export default function Map({ updateContent, ports }: MapProps) {    // render()
                 </Geographies>
                 <MarkerComponent updateContent={updateContent} ports={ports} />}
             </ComposableMap>
-            <ReactTooltip>{current?.portname}, {current?.iso3}</ReactTooltip>
+            <ReactTooltip id="marker">{current?.portname}, {current?.iso3}</ReactTooltip>
         </div>
     )
 }
