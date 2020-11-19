@@ -10,10 +10,10 @@ export default function Grouping() {
                 <h1>Users with similar decision-making</h1>
                 <div>
 
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card name="Felix Felixsen" />
+                    <Card name="Helena Helensen"/>
+                    <Card name="Mikkel Mikkelsen"/>
+                    <Card name="Alexander Alexandersen"/>
                 </div>
             </div>
         </div>
