@@ -39,7 +39,7 @@ export default function SplashScreen() {
                 <SmallCard class="yellow"/>
                 <SmallCard class="red"/>
                 <SmallCard class="blue"/>
-                <Card />
+                <Card name="Kaarl Kaarlsen" />
             </div>
         )
     }

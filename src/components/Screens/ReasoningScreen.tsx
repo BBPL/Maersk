@@ -15,7 +15,7 @@ export default function ReasoningScreen(){
 
     return(
         <div className="body-content">
-            <Card />
+            <Card name="Svenn Svennsen"/>
             <div className="form-wrapper">
                 <form className="form-container">
                     <h1>Decision feedback</h1>
